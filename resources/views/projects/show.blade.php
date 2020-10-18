@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Yan Siegers Portfolio</title>
+        <title>My project</title>
 
         <!-- Fonts -->
         {{-- <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet"> --}}
@@ -13,7 +13,8 @@
         <link rel="stylesheet" href="build/tailwind.css">
     </head>
     <body>
-      <h1 class="underline">Yan Siegers Portfolio</h1>
+      <h1 class="underline">My project</h1>
+      <p>{{ $project['title'] }}</p>
       <ul class="list-disc list-inside">
         <li>One</li>
         <li>Two</li>
