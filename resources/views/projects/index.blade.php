@@ -15,8 +15,13 @@
     <body>
       <h1 class="underline">Projects</h1>
       <ul class="list-disc list-inside">
+        
         @foreach ($projects as $project)
-        <li><a href="/projects/{{ $project['id'] }}">{{ $project['title'] }}</a></li>
+        <li>
+          <a href="{{ action('App\Http\Controllers\ProjectController@show', [$project->id]) }}">
+            {{ $project->title }}
+          </a>
+        </li>
         @endforeach
       </ul>
     </body>
