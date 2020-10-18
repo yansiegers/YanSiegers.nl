@@ -14,6 +14,7 @@
     </head>
     <body>
       <h1 class="underline">My project</h1>
+      <p>{{ $project['title'] }}</p>
       <ul class="list-disc list-inside">
         <li>One</li>
         <li>Two</li>
