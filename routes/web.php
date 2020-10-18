@@ -15,12 +15,10 @@ Route::resource('projects', ProjectController::class)->only([
     'index', 'show'
 ]);
 
-// Route::get('/blog', function () {
-//     return view('blog');
-// });
-
-// use App\Http\Controllers\BlogPostsController;
-// Route::get('/blog/posts', [BlogPostsController::class, 'index']);
+use App\Http\Controllers\PostController;
+Route::resource('posts', PostController::class)->only([
+    'index', 'show'
+]);
 
 // Route::get('/', function () {
 //     return view('home');

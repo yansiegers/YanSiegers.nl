@@ -3,9 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Project;
+use App\Models\Post;
 
-class ProjectController extends Controller
+class PostController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,8 +14,8 @@ class ProjectController extends Controller
      */
     public function index()
     {
-        return view('projects.index', [
-            'projects' => Project::all()
+        return view('posts.index', [
+            'posts' => Post::all()
         ]);
     }
 
@@ -27,6 +27,8 @@ class ProjectController extends Controller
      */
     public function show($id)
     {
-        return view('projects.show', ['project' => Project::findOrFail($id)]);
+        return view('posts.show', [
+            'post' => Post::findOrFail($id)
+        ]);
     }
 }
