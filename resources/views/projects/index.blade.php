@@ -15,9 +15,9 @@
     <body>
       <h1 class="underline">Projects</h1>
       <ul class="list-disc list-inside">
-        <li>One</li>
-        <li>Two</li>
-        <li>Three</li>
+        @foreach ($projects as $project)
+        <li><a href="/projects/{{ $project['id'] }}">{{ $project['title'] }}</a></li>
+        @endforeach
       </ul>
     </body>
 
