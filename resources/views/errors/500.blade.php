@@ -1,5 +1,5 @@
 @php
-    $page_title = '404'
+    $page_title = '500'
 @endphp
 
 @extends('layouts.default', [
@@ -9,7 +9,7 @@
 @section('content')
   {{-- <h1 class="text-xl font-bold">{{ $page_title }}</h1> --}}
 
-  <img src="/assets/404 - white weird.png" alt="404">
+  <img src="/assets/500 - white weird.png" alt="500">
 
-  <p>Oops, page not found.</p>
+  <p>Oops, internal server error.</p>
 @stop
