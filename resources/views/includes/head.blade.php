@@ -10,4 +10,4 @@
 <title>Yan Siegers {{ isset($title) ? Str::title(' – '.$title) : '' }}</title>
 
 <!-- Styles -->
-<link rel="stylesheet" href="build/tailwind.css">
+<link rel="stylesheet" href="/build/tailwind.css">
