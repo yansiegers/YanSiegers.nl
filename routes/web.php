@@ -5,12 +5,12 @@ use App\Http\Controllers\ProjectController;
 use App\Http\Controllers\PostController;
 
 Route::get('/', function () {
-    return view('home');
-});
+    return view('pages.home');
+})->name('home');
 
 Route::get('/get-in-contact', function () {
-    return view('contact');
-});
+    return view('pages.contact');
+})->name('contact');
 
 Route::resource('projects', ProjectController::class)->only([
     'index', 'show'
@@ -21,9 +21,9 @@ Route::resource('posts', PostController::class)->only([
 ]);
 
 Route::get('examples', function () {
-    return view('examples');
-});
+    return view('pages.examples');
+})->name('examples');
 
 Route::get('cms', function () {
-    return view('cms');
-});
+    return view('pages.cms');
+})->name('cms');

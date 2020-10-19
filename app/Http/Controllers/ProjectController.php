@@ -14,7 +14,7 @@ class ProjectController extends Controller
      */
     public function index()
     {
-        return view('projects.index', [
+        return view('pages.projects.index', [
             'projects' => Project::all()
         ]);
     }
@@ -27,6 +27,6 @@ class ProjectController extends Controller
      */
     public function show($id)
     {
-        return view('projects.show', ['project' => Project::findOrFail($id)]);
+        return view('pages.projects.show', ['project' => Project::findOrFail($id)]);
     }
 }
