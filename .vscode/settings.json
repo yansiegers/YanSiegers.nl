@@ -1,0 +1,11 @@
+{
+  "editor.rulers": [
+    80,
+    120
+  ],
+  "html.format.endWithNewline": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}
