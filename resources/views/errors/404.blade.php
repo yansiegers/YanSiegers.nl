@@ -9,7 +9,7 @@
 @section('content')
   {{-- <h1 class="text-xl font-bold">{{ $page_title }}</h1> --}}
 
-  <img src="/assets/404 - white weird.png" alt="404">
+  <img src="/assets/errors/404 - white weird.png" alt="404">
 
   <p>Oops, page not found.</p>
 @stop
