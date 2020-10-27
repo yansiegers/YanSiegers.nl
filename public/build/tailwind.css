@@ -21636,6 +21636,69 @@ video {
           animation: bounce 1s infinite;
 }
 
+h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+}
+
+@-webkit-keyframes comeforeward {
+  from {
+    box-shadow: -10px 0px 0px 0px rgba(255, 0, 0, 0.75),
+                10px 0px 0px 0px rgba(0, 255, 255, 0.75);
+  }
+
+  to {
+    box-shadow: -15px 0px 0px 0px rgba(255, 0, 0, 0.75),
+                15px 0px 0px 0px rgba(0, 255, 255, 0.75);
+  }
+}
+
+@keyframes comeforeward {
+  from {
+    box-shadow: -10px 0px 0px 0px rgba(255, 0, 0, 0.75),
+                10px 0px 0px 0px rgba(0, 255, 255, 0.75);
+  }
+
+  to {
+    box-shadow: -15px 0px 0px 0px rgba(255, 0, 0, 0.75),
+                15px 0px 0px 0px rgba(0, 255, 255, 0.75);
+  }
+}
+
+.yan-btn {
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  box-shadow: -10px 0px 0px 0px rgba(255, 0, 0, 0.75),
+            10px 0px 0px 0px rgba(0, 255, 255, 0.75);
+}
+
+.card {
+  font-weight: 700;
+  box-shadow: -10px 0px 0px 0px rgba(255, 0, 0, 0.75),
+            10px 0px 0px 0px rgba(0, 255, 255, 0.75);
+}
+
+.yan-btn:hover,
+    .card:hover {
+  -webkit-animation-name: comeforeward;
+          animation-name: comeforeward;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;

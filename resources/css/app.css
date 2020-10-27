@@ -3,3 +3,44 @@
 @tailwind components;
 
 @tailwind utilities;
+
+@layer utilities {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        @apply uppercase font-bold text-center;
+    }
+
+    @keyframes comeforeward {
+        from {
+            box-shadow: -10px 0px 0px 0px rgba(255, 0, 0, 0.75),
+                10px 0px 0px 0px rgba(0, 255, 255, 0.75);
+        }
+        to {
+            box-shadow: -15px 0px 0px 0px rgba(255, 0, 0, 0.75),
+                15px 0px 0px 0px rgba(0, 255, 255, 0.75);
+        }
+    }
+
+    .yan-btn {
+        @apply uppercase font-bold text-center px-3 py-2;
+        box-shadow: -10px 0px 0px 0px rgba(255, 0, 0, 0.75),
+            10px 0px 0px 0px rgba(0, 255, 255, 0.75);
+    }
+
+    .card {
+        @apply font-bold;
+        box-shadow: -10px 0px 0px 0px rgba(255, 0, 0, 0.75),
+            10px 0px 0px 0px rgba(0, 255, 255, 0.75);
+    }
+
+    .yan-btn:hover,
+    .card:hover {
+        animation-name: comeforeward;
+        animation-duration: 0.5s;
+        animation-fill-mode: forwards;
+    }
+}
