@@ -25,20 +25,35 @@
         }
     }
 
-    .yan-btn {
+    /* .yan-btn {
+        @apply uppercase font-bold text-center px-3 py-2;
+        box-shadow: -10px 0px 0px 0px rgba(255, 0, 0, 0.75),
+            10px 0px 0px 0px rgba(0, 255, 255, 0.75);
+    } */
+
+    .btn {
         @apply uppercase font-bold text-center px-3 py-2;
         box-shadow: -10px 0px 0px 0px rgba(255, 0, 0, 0.75),
             10px 0px 0px 0px rgba(0, 255, 255, 0.75);
     }
 
-    .card {
+    .btn-white {
+        @apply bg-white text-black;
+    }
+
+    .btn-black {
+        @apply bg-black text-white;
+    }
+
+    /* .card {
         @apply font-bold;
         box-shadow: -10px 0px 0px 0px rgba(255, 0, 0, 0.75),
             10px 0px 0px 0px rgba(0, 255, 255, 0.75);
-    }
+    } */
 
-    .yan-btn:hover,
-    .card:hover {
+    /* .card:hover, */
+    /* .yan-btn:hover, */
+    .btn:hover {
         animation-name: comeforeward;
         animation-duration: 0.5s;
         animation-fill-mode: forwards;

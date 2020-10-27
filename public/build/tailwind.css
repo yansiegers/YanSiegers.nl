@@ -21671,7 +21671,13 @@ h1,
   }
 }
 
-.yan-btn {
+/* .yan-btn {
+        @apply uppercase font-bold text-center px-3 py-2;
+        box-shadow: -10px 0px 0px 0px rgba(255, 0, 0, 0.75),
+            10px 0px 0px 0px rgba(0, 255, 255, 0.75);
+    } */
+
+.btn {
   text-transform: uppercase;
   font-weight: 700;
   text-align: center;
@@ -21683,14 +21689,35 @@ h1,
             10px 0px 0px 0px rgba(0, 255, 255, 0.75);
 }
 
-.card {
-  font-weight: 700;
-  box-shadow: -10px 0px 0px 0px rgba(255, 0, 0, 0.75),
-            10px 0px 0px 0px rgba(0, 255, 255, 0.75);
+.btn-white {
+  --bg-opacity: 1;
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, var(--bg-opacity));
+  --text-opacity: 1;
+  color: #000;
+  color: rgba(0, 0, 0, var(--text-opacity));
 }
 
-.yan-btn:hover,
-    .card:hover {
+.btn-black {
+  --bg-opacity: 1;
+  background-color: #000;
+  background-color: rgba(0, 0, 0, var(--bg-opacity));
+  --text-opacity: 1;
+  color: #fff;
+  color: rgba(255, 255, 255, var(--text-opacity));
+}
+
+/* .card {
+        @apply font-bold;
+        box-shadow: -10px 0px 0px 0px rgba(255, 0, 0, 0.75),
+            10px 0px 0px 0px rgba(0, 255, 255, 0.75);
+    } */
+
+/* .card:hover, */
+
+/* .yan-btn:hover, */
+
+.btn:hover {
   -webkit-animation-name: comeforeward;
           animation-name: comeforeward;
   -webkit-animation-duration: 0.5s;
