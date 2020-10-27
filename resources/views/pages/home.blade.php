@@ -54,14 +54,22 @@
 
   {{--------------------------------------------}}
 
-  {{-- <div class="h-screen bg-white">
-    <div class="container mx-auto px-5 border-black border-4">
+  <div class="bg-white">
+    <div class="container mx-auto max-w-lg flex flex-col h-screen justify-center">
+
+      <h2 class="text-6xl text-black mb-8">Hi, I'm Yan</h2>
+      <p class="text-black text-center text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+      <div class="flex justify-evenly mt-24">
+        <input type="button" class=" btn btn-black" value="See examples">
+        <input type="button" class=" btn btn-black" value="See all">
+      </div>
 
     </div>
-  </div> --}}
+  </div>
 
-  <div class="h-screen bg-black">
+  <div class="h-1/2 bg-one bg-fixed bg-cover bg-center" style="background-image: url('/assets/images/achmeatoren-bw.jpg')"></div>
 
+  <div class="bg-black">
     <div class="container mx-auto max-w-lg flex flex-col h-screen justify-center">
 
       <h2 class="text-6xl text-white mb-8">About me</h2>
@@ -72,17 +80,34 @@
       </div>
 
     </div>
-
   </div>
 
-  <div class="h-screen bg-white">
-    <div class="container mx-auto px-5">
+  <div class="h-1/2 bg-one bg-fixed bg-cover bg-center" style="background-image: url('/assets/images/treinstation-bw.jpg')"></div>
+
+  <div class="bg-white">
+    <div class="container mx-auto max-w-lg flex flex-col h-screen justify-center">
+
+      <h2 class="text-6xl text-black mb-8">Projects</h2>
+      <p class="text-black text-center text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+      <div class="flex justify-evenly mt-24">
+        <input type="button" class=" btn btn-black" value="See examples">
+        <input type="button" class=" btn btn-black" value="See all">
+      </div>
 
     </div>
   </div>
 
-  <div class="h-screen bg-black">
-    <div class="container mx-auto px-5">
+  <div class="h-1/2 bg-one bg-fixed bg-cover bg-center" style="background-image: url('/assets/images/treinstation2-bw.jpg')"></div>
+
+  <div class="bg-black">
+    <div class="container mx-auto max-w-lg flex flex-col h-screen justify-center">
+
+      <h2 class="text-6xl text-white mb-8">Get in contact</h2>
+      <p class="text-white text-center text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+      <div class="flex justify-evenly mt-24">
+        <input type="button" class=" btn btn-white" value="LinkedIn">
+        <input type="button" class=" btn btn-white" value="Send an e-mail">
+      </div>
 
     </div>
   </div>
