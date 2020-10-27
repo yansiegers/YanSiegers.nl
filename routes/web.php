@@ -24,6 +24,10 @@ Route::get('examples', function () {
     return view('pages.examples');
 })->name('examples');
 
+// Route::get('cv', function () {
+//   return view('pages.cv');
+// })->name('cv');
+
 Route::get('cms', function () {
     return view('pages.cms');
 })->name('cms');

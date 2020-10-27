@@ -59,10 +59,6 @@
 
       <h2 class="text-6xl text-black mb-8">Hi, I'm Yan</h2>
       <p class="text-black text-center text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-      <div class="flex justify-evenly mt-24">
-        <input type="button" class=" btn btn-black" value="See examples">
-        <input type="button" class=" btn btn-black" value="See all">
-      </div>
 
     </div>
   </div>
@@ -75,8 +71,11 @@
       <h2 class="text-6xl text-white mb-8">About me</h2>
       <p class="text-white text-center text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
       <div class="flex justify-evenly mt-24">
-        <input type="button" class=" btn btn-white" value="See my blog">
-        <input type="button" class=" btn btn-white" value="See my CV">
+        {{-- <input type="button" class=" btn btn-white" value="See my blog">
+        <input type="button" class=" btn btn-white" value="See my CV"> --}}
+
+        <a class="btn btn-white" href="{{ action('App\Http\Controllers\PostController@index') }}">See my blog</a>
+        <a class="btn btn-white" href="{{ route('home') }}">See my CV</a>
       </div>
 
     </div>
@@ -90,8 +89,11 @@
       <h2 class="text-6xl text-black mb-8">Projects</h2>
       <p class="text-black text-center text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
       <div class="flex justify-evenly mt-24">
-        <input type="button" class=" btn btn-black" value="See examples">
-        <input type="button" class=" btn btn-black" value="See all">
+        {{-- <input type="button" class=" btn btn-black" value="See examples">
+        <input type="button" class=" btn btn-black" value="See all"> --}}
+
+        <a class="btn btn-black" href="{{ route('examples') }}">See examples</a>
+        <a class="btn btn-black" href="{{ action('App\Http\Controllers\ProjectController@index') }}">See all</a>
       </div>
 
     </div>
@@ -105,8 +107,11 @@
       <h2 class="text-6xl text-white mb-8">Get in contact</h2>
       <p class="text-white text-center text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
       <div class="flex justify-evenly mt-24">
-        <input type="button" class=" btn btn-white" value="LinkedIn">
-        <input type="button" class=" btn btn-white" value="Send an e-mail">
+        {{-- <input type="button" class=" btn btn-white" value="LinkedIn">
+        <input type="button" class=" btn btn-white" value="Send an e-mail"> --}}
+
+        <a class="btn btn-white" href="https://www.linkedin.com/in/yansiegers/">My LinkedIn</a>
+        <a class="btn btn-white" href="mailto:yan@yansiegers.nl">Send me an e-mail</a>
       </div>
 
     </div>
