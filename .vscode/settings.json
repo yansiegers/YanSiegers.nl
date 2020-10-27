@@ -1,11 +1,45 @@
 {
-  "editor.rulers": [
-    80,
-    120
-  ],
-  "html.format.endWithNewline": true,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+    "editor.rulers": [80, 120],
+    "editor.detectIndentation": false,
+    // "editor.tabSize": 2,
+    "editor.formatOnSave": true,
+    "html.format.endWithNewline": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.codeActionsOnSave": {
+        "source.fixAll.stylelint": true
+    },
+    "stylelint.snippet": [
+      "css",
+      "less",
+      "postcss",
+      "scss",
+      "php"
+    ],
+    "stylelint.validate": [
+      "css",
+      "html",
+      "javascript",
+      "javascriptreact",
+      "less",
+      "markdown",
+      "postcss",
+      "sass",
+      "scss",
+      "source.css.styled",
+      "source.markdown.math",
+      "styled-css",
+      "sugarss",
+      "svelte",
+      "typescript",
+      "typescriptreact",
+      "vue",
+      "vue-html",
+      "vue-postcss",
+      "xml",
+      "xsl",
+      "php"
+    ]
 }

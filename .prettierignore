@@ -4,3 +4,6 @@ build
 
 # Ignore all HTML files:
 # *.html
+
+# Ignore config files
+tailwind.config.js
