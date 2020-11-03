@@ -10518,7 +10518,7 @@ video {
 }
 
 .h-2\/3 {
-  height: 33vh;
+  height: 66vh;
 }
 
 .h-1\/4 {
@@ -10526,7 +10526,7 @@ video {
 }
 
 .h-3\/4 {
-  height: 25vh;
+  height: 75vh;
 }
 
 .text-xs {
@@ -31679,7 +31679,7 @@ h1,
   }
 
   .sm\:h-2\/3 {
-    height: 33vh;
+    height: 66vh;
   }
 
   .sm\:h-1\/4 {
@@ -31687,7 +31687,7 @@ h1,
   }
 
   .sm\:h-3\/4 {
-    height: 25vh;
+    height: 75vh;
   }
 
   .sm\:text-xs {
@@ -52685,7 +52685,7 @@ h1,
   }
 
   .md\:h-2\/3 {
-    height: 33vh;
+    height: 66vh;
   }
 
   .md\:h-1\/4 {
@@ -52693,7 +52693,7 @@ h1,
   }
 
   .md\:h-3\/4 {
-    height: 25vh;
+    height: 75vh;
   }
 
   .md\:text-xs {
@@ -73691,7 +73691,7 @@ h1,
   }
 
   .lg\:h-2\/3 {
-    height: 33vh;
+    height: 66vh;
   }
 
   .lg\:h-1\/4 {
@@ -73699,7 +73699,7 @@ h1,
   }
 
   .lg\:h-3\/4 {
-    height: 25vh;
+    height: 75vh;
   }
 
   .lg\:text-xs {
@@ -94697,7 +94697,7 @@ h1,
   }
 
   .xl\:h-2\/3 {
-    height: 33vh;
+    height: 66vh;
   }
 
   .xl\:h-1\/4 {
@@ -94705,7 +94705,7 @@ h1,
   }
 
   .xl\:h-3\/4 {
-    height: 25vh;
+    height: 75vh;
   }
 
   .xl\:text-xs {

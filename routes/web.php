@@ -8,6 +8,10 @@ Route::get('/', function () {
     return view('pages.home');
 })->name('home');
 
+Route::get('/mobile', function () {
+  return view('pages.mobile');
+});
+
 Route::get('/get-in-contact', function () {
     return view('pages.contact');
 })->name('contact');
