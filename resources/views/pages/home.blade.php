@@ -75,7 +75,7 @@
         <input type="button" class=" btn btn-white" value="See my CV"> --}}
 
         <a class="btn btn-white" href="{{ action('App\Http\Controllers\PostController@index') }}">See my blog</a>
-        <a class="btn btn-white" href="{{ route('home') }}">See my CV</a>
+        <a class="btn btn-white" href="{{ route('home') }}">See my resumé</a>
       </div>
 
     </div>
