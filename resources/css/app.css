@@ -3,3 +3,98 @@
 @tailwind components;
 
 @tailwind utilities;
+
+@layer utilities {
+    h1, h2, h3, h4, h5, h6 {
+        @apply uppercase font-bold text-center;
+    }
+
+    h1 { @apply text-2xl; }
+    h2 { @apply text-xl; }
+    h3 { @apply text-lg; }
+    h4 { @apply text-base; }
+    h5 { @apply text-base; }
+    h6 { @apply text-base; }
+
+    a { @apply underline }
+    a:hover { @apply text-ys-blue-dark }
+    .light-link:hover { @apply text-ys-blue }
+    .dark-link:hover { @apply text-ys-blue-dark }
+
+    .no-link { @apply no-underline }
+    .no-link:hover { @apply underline }
+
+    @keyframes comeforeward {
+        from {
+            box-shadow: -10px 0px 0px 0px rgba(255, 0, 0, 0.75),
+                10px 0px 0px 0px rgba(0, 255, 255, 0.75);
+        }
+        to {
+            box-shadow: -15px 0px 0px 0px rgba(255, 0, 0, 0.75),
+                15px 0px 0px 0px rgba(0, 255, 255, 0.75);
+        }
+    }
+
+    @keyframes comebackward {
+        from {
+            box-shadow: -15px 0px 0px 0px rgba(255, 0, 0, 0.75),
+                15px 0px 0px 0px rgba(0, 255, 255, 0.75);
+        }
+        to {
+            box-shadow: -10px 0px 0px 0px rgba(255, 0, 0, 0.75),
+                10px 0px 0px 0px rgba(0, 255, 255, 0.75);
+        }
+    }
+
+    .btn {
+        @apply uppercase font-bold text-center no-underline px-3 py-2;
+
+        animation-name: comebackward;
+        animation-duration: 0.5s;
+        animation-fill-mode: forwards;
+
+        margin-left: 10px;
+        margin-right: 10px;
+
+        box-shadow: -10px 0px 0px 0px rgba(255, 0, 0, 0.75),
+            10px 0px 0px 0px rgba(0, 255, 255, 0.75);
+    }
+    .btn:hover {
+        animation-name: comeforeward;
+        animation-duration: 0.5s;
+        animation-fill-mode: forwards;
+    }
+
+    .btn-white { @apply bg-white text-black; }
+    .btn-white:hover { @apply text-black; }
+
+    .btn-black { @apply bg-black text-white; }
+    .btn-black:hover { @apply text-white; }
+
+
+    /* .card {
+        @apply font-bold;
+        box-shadow: -10px 0px 0px 0px rgba(255, 0, 0, 0.75),
+            10px 0px 0px 0px rgba(0, 255, 255, 0.75);
+    } */
+
+    @keyframes colorize {
+        from { filter: grayscale(100%); }
+        to { filter: none; }
+    }
+    @keyframes greymark {
+        from { filter: none; }
+        to { filter: grayscale(100%); }
+    }
+
+    .filter {
+        animation-name: greymark;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
+    .filter:hover {
+        animation-name: colorize;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
+}

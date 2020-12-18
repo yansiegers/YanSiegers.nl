@@ -1,23 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  @include('includes.head')
-</head>
+@include('includes.head')
+
 <body>
-  <div class="container">
 
-    <header class="row">
-      @include('includes.header')
-    </header>
+    @include('includes.nav')
 
-    <main class="row">
-      @yield('content')
+    <main>
+        @yield('content')
     </main>
 
-    <footer class="row">
-      @include('includes.footer')
-    </footer>
+    @include('includes.footer')
 
-  </div>  
 </body>
 </html>
