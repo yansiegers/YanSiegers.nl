@@ -3,7 +3,7 @@
 @endphp
 
 @extends('layouts.default', [
-  'title' => "500: " . $page_title
+    'title' => "500: " . $page_title
 ])
 
 @section('content')
